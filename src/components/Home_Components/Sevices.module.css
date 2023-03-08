@@ -1,0 +1,11 @@
+.s_container {
+	flex-wrap: wrap;
+	margin: 4em 0;
+	justify-content: center;
+}
+
+.serve_modal {
+	width: 330px;
+	min-width: 250px;
+	padding: 0.45em;
+}

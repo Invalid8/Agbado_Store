@@ -1,0 +1,40 @@
+.full_screen {
+	background-image: url("https://ik.imagekit.io/invalid33/show-_bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678287506987");
+	background-position: center;
+	background-size: cover;
+}
+
+.full_p {
+	height: 100vh;
+	position: relative; 
+	top: calc(60px + 5vmax);
+}
+
+.left_btn {
+	left: 1em;
+}
+
+.right_btn {
+	right: 1em;
+}
+
+.left_btn,
+.right_btn {
+	font-weight: bold;
+	color: inherit;
+	font-size: 2.5em;
+}
+
+.description {
+	padding: 10px;
+	min-width: 270px;
+	font-size: 1.5em;
+}
+
+.buy_btn {
+	padding: 0.5em 1.2em;
+	font-size: 0.8em;
+	width: fit-content;
+	margin-top: 1em;
+	font-weight: bold;
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, useContext } from "react";
+import { NavBar } from "./components/NavBar";
+import "./css/App.css";
+import Blog from "./pages/Blog";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import { ThemeContext } from "./context/ThemeContext";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const { isLightTheme, light, dark } = useContext(ThemeContext);
+	const theme = isLightTheme ? light : dark;
+
+	return (
+		<div className={`App ${theme.bg} ${theme.txt}`}>
+			<NavBar />
+			<Suspense fallback={<div className="loading">loading ...</div>}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/Shop" element={<Shop />} />
+					<Route path="/Blogs" element={<Blog />} />
+					<Route path="*" element={<h1>Not Found</h1>} />
+				</Routes>
+			</Suspense>
+		</div>
+	);
 }
 
 export default App;
