@@ -155,7 +155,7 @@ button.extra_btn.mobile {
 		margin: 1em 0;
 	}
 
-	.nav_container.mobile {
+	.nav_container{
 		padding: 10px;
 		height: 60px;
 		position: fixed;
@@ -171,11 +171,11 @@ button.extra_btn.mobile {
 		border-top: 2px solid var(--special-c);
 	}
 
-	.n_h .nav_container.mobile li:nth-child(:last-child) {
+	.n_h .nav_container li:nth-child(:last-child) {
 		margin-left: 0;
 	}
 
-	.nav_container.mobile li {
+	.nav_container li {
 		margin-left: 0;
 		display: inline;
 		justify-content: space-between;
@@ -186,7 +186,7 @@ button.extra_btn.mobile {
 }
 
 @media (max-width: 300px) {
-	.nav_container.mobile li {
+	.nav_container li {
 		margin: 0 0.8em;
 	}
 }
