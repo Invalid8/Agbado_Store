@@ -66,9 +66,7 @@ export const NavBar = () => {
 					<div
 						className={`nav-links-box ${classes.nav_container} ${
 							Mobile ? classes.mobile : ""
-						} ${menu ? classes.show_2 : ""} ${theme.cbg} ${
-							theme.bgc
-						}`}
+						} ${theme.cbg} ${theme.bgc}`}
 					>
 						<ul>
 							<li className={`${classes.nav_link} d-in-block`}>
@@ -110,11 +108,13 @@ export const NavBar = () => {
 				<div
 					className="others"
 					onMouseOver={(e) => {
-						isOthers(true);
-						isMenu(false);
+						if (!Mobile) {
+							isOthers(true);
+							isMenu(false);
+						}
 					}}
 					onMouseOut={(e) => {
-						isOthers(false);
+						if (!Mobile) isOthers(false);
 					}}
 				>
 					<button className={`${classes.drop_others} ${theme.bgc}`}>
