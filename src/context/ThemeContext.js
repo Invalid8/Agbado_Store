@@ -12,6 +12,8 @@ class ThemeContextProvider extends Component {
 			gt: "bw-g-bg",
 			cbg: "d-black-bg",
 			bgc: "c-white-c",
+			color: "#fff",
+			colorInvert: "#040413",
 		},
 		dark: {
 			txt: "c-white-c",
@@ -20,6 +22,8 @@ class ThemeContextProvider extends Component {
 			gt: "bb-g-bg",
 			cbg: "c-white-bg",
 			bgc: "d-black-c",
+			color: "#040413",
+			colorInvert: "#fff",
 		},
 	};
 	toggleTheme = () => {

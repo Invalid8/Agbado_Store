@@ -5,6 +5,7 @@
 	overflow: auto;
 	padding-bottom: 4em;
 	grid-template-columns: 1fr;
+	position: relative;
 }
 
 .product_card {
@@ -21,10 +22,10 @@
 .img_box {
 	width: 100%;
 	height: 100%;
-	overflow: visible !important;
+	max-width: 250px;
 }
 
-.img_box img{
+.img_box img {
 	width: 100%;
 	height: 100%;
 	object-position: center;
@@ -80,9 +81,13 @@
 }
 
 @media (max-width: 641px) {
+	.gallary1 {
+		place-items: center;
+	}
+
 	.product_card {
-		flex-direction:column;
+		flex-direction: column;
 		width: 270px;
-		padding: 1em;	
+		padding: 1em;
 	}
 }

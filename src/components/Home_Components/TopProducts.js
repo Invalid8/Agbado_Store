@@ -1,15 +1,11 @@
 import { useState } from "react";
-import ReactStars from 'react-stars'
+import ReactStars from "react-stars";
 import classes from "./TopProducts.module.css";
 import useFetch from "../useFetch";
-
 
 const TopProducts = ({ theme }) => {
 	const [filterBtn, isFilterBtn] = useState("latest");
 	const [clicked, isClicked] = useState([1, 0, 0]);
-
-	// eslint-disable-next-line no-unused-vars
-	const [pList, isPlist] = useState([]);
 
 	const {
 		data: products,
@@ -21,11 +17,12 @@ const TopProducts = ({ theme }) => {
 		<section className={`${classes.TopProducts}`}>
 			<div
 				className={`${classes.header} u-flex just-space-bet main-pad relative-d big-gap`}
+				style={{ borderBottomColor: theme.colorInvert }}
 			>
 				<div className={`${classes.title} relative-d`}>
 					<h3 className="cap-txt">top products</h3>
 				</div>
-				<div className="filter o-flex-ali-cen just-space-bet big-gap">
+				<div className={`${classes.filter} o-flex-ali-cen just-space-bet big-gap`}>
 					<button
 						className={`upp-txt block-d relative-d ${theme.txt} ${
 							clicked[0] ? classes.line : ""
@@ -86,6 +83,9 @@ const TopProducts = ({ theme }) => {
 								<div
 									className={`${classes.productModal} o-flex-ali-cen f-col just-cont-SB modal-card-small big-gap`}
 									key={filteredValue.id}
+									style={{
+										borderBottomColor: theme.colorInvert,
+									}}
 								>
 									<div className={`${classes.img_box}`}>
 										<img
@@ -99,13 +99,16 @@ const TopProducts = ({ theme }) => {
 									<div className="info o-flex-ali-cen f-col just-cont-SB big-gap">
 										<div className="rating upp-txt">
 											<ReactStars
-											count = {5}
-											value = {filteredValue.rating.rate}
-											size = {24}
-											color = {'#ffd700'}
-											changeRating = {()=>{}} />
+												count={5}
+												value={
+													filteredValue.rating.rate
+												}
+												size={24}
+												color={"#ffd700"}
+												changeRating={() => {}}
+											/>
 										</div>
-										
+
 										<p className="discription">
 											{filteredValue.title.substring(
 												0,
@@ -113,7 +116,7 @@ const TopProducts = ({ theme }) => {
 											)}
 											...
 										</p>
-										
+
 										<div className="price o-flex-ali-cen small-gap">
 											<h4 className="new-price">
 												${filteredValue.price[0]}

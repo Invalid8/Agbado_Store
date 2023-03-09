@@ -1,16 +1,38 @@
 import classes from "./Sevices.module.css";
+import useFetch from "../useFetch";
 
-const Services = ({ services, theme }) => {
+const Services = ({ theme }) => {
+	const {
+		data: services,
+		error,
+		isPending,
+	} = useFetch("http://localhost:8000/services");
+
 	return (
 		<section className="services">
-			<div className={`${classes.s_container} u-flex sub-pad big-gap`}>
+			{error && (
+				<div className="error">
+					<h2>Error 404 Not Found</h2>
+					<h4>{error}</h4>
+				</div>
+			)}
+			{isPending && (
+				<div className="loading">
+					<h5>loading ...</h5>
+				</div>
+			)}
+			{
+				services &&
+					<div className={`${classes.s_container} u-flex sub-pad big-gap`}>
 				{services.map((value) => {
 					return (
 						<div
 							className={`${classes.serve_modal} ${theme.ui} o-flex-ali-cen just-space-bet`}
 							key={value.id}
 						>
-							<div className="icon">{value.icon}</div>
+							<div className="icon">
+								<i className={`fa ${value.icon}`}></i>
+							</div>
 							<div className="info">
 								<div className="title upp-txt b-txt">
 									{value.title}
@@ -21,6 +43,7 @@ const Services = ({ services, theme }) => {
 					);
 				})}
 			</div>
+				}
 		</section>
 	);
 };

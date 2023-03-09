@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { BsMoonStars, BsSun } from "react-icons/bs";
 
 const ThemeToggle = () => {
 	const { toggleTheme } = useContext(ThemeContext);
@@ -11,7 +12,7 @@ const ThemeToggle = () => {
 			className={`mode ${theme.bg} ${theme.txt}`}
 			onClick={toggleTheme}
 		>
-			{isLightTheme ? "L" : "D"}
+			{isLightTheme ? <BsSun /> : <BsMoonStars />}
 		</button>
 	);
 };

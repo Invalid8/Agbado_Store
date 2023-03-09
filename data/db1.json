@@ -78,7 +78,8 @@
             ],
             "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
             "category": [
-                "latest", "featured"
+                "latest",
+                "featured"
             ],
             "image": "https://ik.imagekit.io/invalid33/71pWzhdJNwL._AC_UL640_QL65_ML3_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678294433561",
             "rating": {
@@ -95,7 +96,8 @@
             ],
             "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
             "category": [
-                "latest", "best"
+                "latest",
+                "best"
             ],
             "image": "https://ik.imagekit.io/invalid33/61sbMiUnoGL._AC_UL640_QL65_ML3_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678294433561",
             "rating": {
@@ -163,7 +165,8 @@
             ],
             "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
             "category": [
-                "best", "latest"
+                "best",
+                "latest"
             ],
             "image": "https://ik.imagekit.io/invalid33/61U7T1koQqL._AC_SX679_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678294433561",
             "rating": {
@@ -180,7 +183,8 @@
             ],
             "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
             "category": [
-                "best", "featured"
+                "best",
+                "featured"
             ],
             "image": "https://ik.imagekit.io/invalid33/71kWymZ_c_L._AC_SX679_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678300405691",
             "rating": {
@@ -197,7 +201,8 @@
             ],
             "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
             "category": [
-                "best", "featured"
+                "best",
+                "featured"
             ],
             "image": "https://ik.imagekit.io/invalid33/61mtL65D4cL._AC_SX679_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678300405691",
             "rating": {
@@ -231,7 +236,8 @@
             ],
             "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
             "category": [
-                "latest", "featured"
+                "latest",
+                "featured"
             ],
             "image": "https://ik.imagekit.io/invalid33/81Zt42ioCgL._AC_SX679_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678300405691",
             "rating": {
@@ -248,7 +254,8 @@
             ],
             "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
             "category": [
-                "latest", "best"
+                "latest",
+                "best"
             ],
             "image": "https://ik.imagekit.io/invalid33/51Y5NI-I5jL._AC_UX679_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678300405691",
             "rating": {
@@ -265,7 +272,8 @@
             ],
             "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
             "category": [
-                "latest", "featured"
+                "latest",
+                "featured"
             ],
             "image": "https://ik.imagekit.io/invalid33/81XH0e8fefL._AC_UY879_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678300405691",
             "rating": {
@@ -340,6 +348,74 @@
                 "rate": 3.6,
                 "count": 145
             }
+        }
+    ],
+    "sGallery": [
+        {
+            "id": 1,
+            "discount": 30,
+            "discount_type": "sale up to 30% off",
+            "product_type": "latest sound system",
+            "view_type": "view offer",
+            "src": "https://ik.imagekit.io/invalid33/red-gold-headphones-digital-device.png?ik-sdk-version=javascript-1.4.3&updatedAt=1670094500768"
+        },
+        {
+            "id": 2,
+            "discount": 20,
+            "discount_type": "20% off",
+            "product_type": "wireless ear buds",
+            "view_type": "shop now",
+            "src": "https://ik.imagekit.io/invalid33/black-earbud.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678208220156"
+        },
+        {
+            "id": 3,
+            "discount": 0,
+            "discount_type": "",
+            "product_type": "portable speaker",
+            "view_type": "",
+            "src": "https://ik.imagekit.io/invalid33/portable-speaker.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678207090903"
+        },
+        {
+            "id": 4,
+            "discount": 0,
+            "discount_type": "",
+            "product_type": "tablet computer",
+            "view_type": "",
+            "src": "https://ik.imagekit.io/invalid33/tablet.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1678289039077"
+        },
+        {
+            "id": 5,
+            "discount": 0,
+            "discount_type": "",
+            "product_type": "game controller",
+            "view_type": "view more",
+            "src": "https://ik.imagekit.io/invalid33/game-controller.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678207091443"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "title": "free shipping worldwide",
+            "icon": "fa-ship",
+            "description": "A dummy text is applied here"
+        },
+        {
+            "id": 2,
+            "title": "24/7 customer services",
+            "icon": "fa-headset",
+            "description": "A dummy text is applied here"
+        },
+        {
+            "id": 3,
+            "title": "money back guanranty",
+            "icon": "fa-moneyCheckAlt",
+            "description": "A dummy text is applied here"
+        },
+        {
+            "id": 4,
+            "title": "fast delivery",
+            "icon": "fa-shippingFast",
+            "description": "A dummy text is applied here"
         }
     ]
 }

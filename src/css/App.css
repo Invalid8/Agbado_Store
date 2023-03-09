@@ -67,22 +67,13 @@
 
 :root {
   --main-gap: 20px;
+  --special-c: #520d97;
 }
 
 button:hover,
 a:hover {
   opacity: 70%;
   cursor: pointer;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  min-width: 300px;
-  font-size: 20px;
 }
 
 button {
@@ -344,7 +335,7 @@ img {
   width: 300px;
   height: 200px;
   max-width: 500px;
-  background: #520d97;
+  background: var(--special-c);
 }
 
 .absolute-d {
@@ -388,7 +379,6 @@ img {
 
 .img-box.dud {
   width: 80%;
-  background: #520d97;
   height: 150px;
   overflow: hidden;
 }

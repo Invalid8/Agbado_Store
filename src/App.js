@@ -12,16 +12,20 @@ function App() {
 	const theme = isLightTheme ? light : dark;
 
 	return (
-		<div className={`App ${theme.bg} ${theme.txt}`}>
-			<NavBar />
-			<Suspense fallback={<div className="loading">loading ...</div>}>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/Shop" element={<Shop />} />
-					<Route path="/Blogs" element={<Blog />} />
-					<Route path="*" element={<h1>Not Found</h1>} />
-				</Routes>
-			</Suspense>
+		<div className={`App ${theme.bg} ${theme.txt} full_p`}>
+			<header>
+				<NavBar />
+			</header>
+			<main>
+				<Suspense fallback={<div className="loading">loading ...</div>}>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/Shop" element={<Shop />} />
+						<Route path="/Blogs" element={<Blog />} />
+						<Route path="*" element={<h1>Not Found</h1>} />
+					</Routes>
+				</Suspense>
+			</main>
 		</div>
 	);
 }
