@@ -6,7 +6,7 @@ const Services = ({ theme }) => {
 		data: services,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app/items/services");
+	} = useFetch("https://agbado-products.netlify.app/items/services.json");
 
 	return (
 		<section className="services">
