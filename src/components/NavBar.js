@@ -33,6 +33,7 @@ export const NavBar = () => {
 			}
 		}
 
+                window.addEventListener("load", handleResize)
 		window.addEventListener("resize", handleResize);
 
 		return () => {
