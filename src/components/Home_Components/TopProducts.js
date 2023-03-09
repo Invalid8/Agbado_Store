@@ -11,7 +11,7 @@ const TopProducts = ({ theme }) => {
 		data: products,
 		error,
 		isPending,
-	} = useFetch("http://localhost:8000/TopProducts");
+	} = useFetch("https://agbado-products.netlify.app/items/TopProducts.json");
 
 	return (
 		<section className={`${classes.TopProducts}`}>
@@ -22,7 +22,9 @@ const TopProducts = ({ theme }) => {
 				<div className={`${classes.title} relative-d`}>
 					<h3 className="cap-txt">top products</h3>
 				</div>
-				<div className={`${classes.filter} o-flex-ali-cen just-space-bet big-gap`}>
+				<div
+					className={`${classes.filter} o-flex-ali-cen just-space-bet big-gap`}
+				>
 					<button
 						className={`upp-txt block-d relative-d ${theme.txt} ${
 							clicked[0] ? classes.line : ""

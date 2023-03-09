@@ -6,7 +6,7 @@ const Services = ({ theme }) => {
 		data: services,
 		error,
 		isPending,
-	} = useFetch("http://localhost:8000/services");
+	} = useFetch("https://agbado-products.netlify.app/items/services");
 
 	return (
 		<section className="services">
@@ -21,29 +21,32 @@ const Services = ({ theme }) => {
 					<h5>loading ...</h5>
 				</div>
 			)}
-			{
-				services &&
-					<div className={`${classes.s_container} u-flex sub-pad big-gap`}>
-				{services.map((value) => {
-					return (
-						<div
-							className={`${classes.serve_modal} ${theme.ui} o-flex-ali-cen just-space-bet`}
-							key={value.id}
-						>
-							<div className="icon">
-								<i className={`fa ${value.icon}`}></i>
-							</div>
-							<div className="info">
-								<div className="title upp-txt b-txt">
-									{value.title}
+			{services && (
+				<div
+					className={`${classes.s_container} u-flex sub-pad big-gap`}
+				>
+					{services.map((value) => {
+						return (
+							<div
+								className={`${classes.serve_modal} ${theme.ui} o-flex-ali-cen just-space-bet`}
+								key={value.id}
+							>
+								<div className="icon">
+									<i className={`fa ${value.icon}`}></i>
 								</div>
-								<div className="descr">{value.description}</div>
+								<div className="info">
+									<div className="title upp-txt b-txt">
+										{value.title}
+									</div>
+									<div className="descr">
+										{value.description}
+									</div>
+								</div>
 							</div>
-						</div>
-					);
-				})}
-			</div>
-				}
+						);
+					})}
+				</div>
+			)}
 		</section>
 	);
 };

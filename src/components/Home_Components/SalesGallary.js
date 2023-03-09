@@ -6,7 +6,7 @@ const SalesGallery = ({ theme, fetch }) => {
 		data: sGallery,
 		error,
 		isPending,
-	} = useFetch("http://localhost:8000/sGallery");
+	} = useFetch("https://agbado-products.netlify.app/items/sGallery");
 
 	return (
 		<section className="SalesGallery">
