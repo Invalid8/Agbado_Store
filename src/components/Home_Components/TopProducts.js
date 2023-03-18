@@ -8,7 +8,7 @@ const TopProducts = ({ theme }) => {
 	const [clicked, isClicked] = useState([1, 0, 0]);
 
 	const {
-		data.TopProducts: products,
+		data: products,
 		error,
 		isPending,
 	} = useFetch("https://agbado-products.netlify.app");
@@ -78,7 +78,7 @@ const TopProducts = ({ theme }) => {
 					</div>
 				)}
 				{products &&
-					products
+					products.TopProducts
 						.filter((value) => value.category.includes(filterBtn))
 						.map((filteredValue) => {
 							return (
