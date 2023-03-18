@@ -3,10 +3,10 @@ import useFetch from "../useFetch";
 
 const SalesGallery = ({ theme, fetch }) => {
 	const {
-		data: sGallery,
+		data.sGallery : sGallery,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app/items/sGallery.json");
+	} = useFetch("https://agbado-products.netlify.app");
 
 	return (
 		<section className="SalesGallery">
