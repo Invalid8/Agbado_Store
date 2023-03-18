@@ -3,10 +3,10 @@ import useFetch from "../useFetch";
 
 const Services = ({ theme }) => {
 	const {
-		data: services,
+		data.services: services,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app/items/services.json");
+	} = useFetch("https://agbado-products.netlify.app");
 
 	return (
 		<section className="services">
