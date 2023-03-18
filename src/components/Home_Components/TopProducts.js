@@ -8,10 +8,10 @@ const TopProducts = ({ theme }) => {
 	const [clicked, isClicked] = useState([1, 0, 0]);
 
 	const {
-		data: products,
+		data.TopProducts: products,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app/items/TopProducts.json");
+	} = useFetch("https://agbado-products.netlify.app");
 
 	return (
 		<section className={`${classes.TopProducts}`}>
