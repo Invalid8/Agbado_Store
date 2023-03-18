@@ -3,7 +3,7 @@ import useFetch from "../useFetch";
 
 const Services = ({ theme }) => {
 	const {
-		data.services: services,
+		data: services,
 		error,
 		isPending,
 	} = useFetch("https://agbado-products.netlify.app");
@@ -25,7 +25,7 @@ const Services = ({ theme }) => {
 				<div
 					className={`${classes.s_container} u-flex sub-pad big-gap`}
 				>
-					{services.map((value) => {
+					{services.services.map((value) => {
 						return (
 							<div
 								className={`${classes.serve_modal} ${theme.ui} o-flex-ali-cen just-space-bet`}
