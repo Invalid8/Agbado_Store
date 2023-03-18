@@ -3,7 +3,7 @@ import useFetch from "../useFetch";
 
 const SalesGallery = ({ theme, fetch }) => {
 	const {
-		data.sGallery : sGallery,
+		data : sGallery,
 		error,
 		isPending,
 	} = useFetch("https://agbado-products.netlify.app");
@@ -25,7 +25,7 @@ const SalesGallery = ({ theme, fetch }) => {
 				<div
 					className={`container ${classes.gallary1} small-gap main-pad o-grid`}
 				>
-					{sGallery.map((value) => {
+					{sGallery.sGallery.map((value) => {
 						return (
 							<article
 								className={`${classes.product_card} ${theme.bgc} ${theme.cbg}`}
