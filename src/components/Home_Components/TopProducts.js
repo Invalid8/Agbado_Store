@@ -11,7 +11,7 @@ const TopProducts = ({ theme }) => {
 		data: products,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app");
+	} = useFetch("https://agbado-products.netlify.app/TopProducts");
 
 	return (
 		<section className={`${classes.TopProducts}`}>
@@ -78,7 +78,7 @@ const TopProducts = ({ theme }) => {
 					</div>
 				)}
 				{products &&
-					products.TopProducts
+					products
 						.filter((value) => value.category.includes(filterBtn))
 						.map((filteredValue) => {
 							return (
