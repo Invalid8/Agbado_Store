@@ -6,7 +6,7 @@ const SalesGallery = ({ theme, fetch }) => {
 		data : sGallery,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app");
+	} = useFetch("https://agbado-products.netlify.app/sGallery");
 
 	return (
 		<section className="SalesGallery">
@@ -25,7 +25,7 @@ const SalesGallery = ({ theme, fetch }) => {
 				<div
 					className={`container ${classes.gallary1} small-gap main-pad o-grid`}
 				>
-					{sGallery.sGallery.map((value) => {
+					{sGallery.map((value) => {
 						return (
 							<article
 								className={`${classes.product_card} ${theme.bgc} ${theme.cbg}`}
