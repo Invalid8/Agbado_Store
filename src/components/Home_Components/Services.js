@@ -6,7 +6,7 @@ const Services = ({ theme }) => {
 		data: services,
 		error,
 		isPending,
-	} = useFetch("https://agbado-products.netlify.app");
+	} = useFetch("https://agbado-products.netlify.app/services");
 
 	return (
 		<section className="services">
@@ -25,7 +25,7 @@ const Services = ({ theme }) => {
 				<div
 					className={`${classes.s_container} u-flex sub-pad big-gap`}
 				>
-					{services.services.map((value) => {
+					{services.map((value) => {
 						return (
 							<div
 								className={`${classes.serve_modal} ${theme.ui} o-flex-ali-cen just-space-bet`}
